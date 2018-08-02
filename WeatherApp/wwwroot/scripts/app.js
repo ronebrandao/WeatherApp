@@ -1,4 +1,4 @@
-import { WeatherSearcher } from "./WeatherSearcher.js";
+import { WeatherSearcher } from "./weathersearcher.js";
 window.onload = function () {
     var cityNameInput = document.getElementById("search");
     var resultContainer = document.getElementById("results");

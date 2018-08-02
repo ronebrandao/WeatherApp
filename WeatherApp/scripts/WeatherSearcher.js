@@ -15,4 +15,4 @@ var WeatherSearcher = /** @class */ (function () {
     return WeatherSearcher;
 }());
 export { WeatherSearcher };
-//# sourceMappingURL=WeatherSearcher.js.map
+//# sourceMappingURL=weathersearcher.js.map

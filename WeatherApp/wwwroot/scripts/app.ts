@@ -1,4 +1,4 @@
-import { WeatherSearcher } from "./WeatherSearcher.js";
+import { WeatherSearcher } from "./weathersearcher.js";
 
 window.onload = () => {
 
