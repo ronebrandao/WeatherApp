@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="scripts\app.ts" />
-    <TypeScriptCompile Include="scripts\WeatherSearcher.ts" />
+    <TypeScriptCompile Include="scripts\weathersearcher.ts" />
   </ItemGroup>
 
 </Project>

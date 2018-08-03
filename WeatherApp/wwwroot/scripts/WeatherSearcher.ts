@@ -14,5 +14,19 @@ export class WeatherSearcher {
             });
     }
 
+    bindData(dados: any) {
+        (document.getElementById("city-name") as HTMLHeadingElement).innerHTML = dados.name.toString();
+        (document.getElementById("icon") as HTMLImageElement).src = `http://openweathermap.org/img/w/${dados.weather[0].icon}.png`;
+        (document.getElementById("temperature") as HTMLSpanElement).innerHTML = this.convertTemp(dados.main.temp);
+        (document.getElementById("min-temp") as HTMLSpanElement).innerHTML = `Min: ${this.convertTemp(dados.main.temp_min)}`;
+        (document.getElementById("max-temp") as HTMLSpanElement).innerHTML = `Max: ${this.convertTemp(dados.main.temp_max)}`;
+        (document.getElementById("description") as HTMLSpanElement).innerHTML = dados.weather[0].description;
+        (document.getElementById("wind-speed") as HTMLSpanElement).innerHTML = `${dados.wind.speed.toString()} m/s`;
+        (document.getElementById("clouds") as HTMLSpanElement).innerHTML = `clouds: ${dados.clouds.all.toString()} %`;
+    }
 
+    private convertTemp(temperature: number) {
+        let result = temperature - 271.15
+        return Math.round(result).toString() + "°C";
+    }
 }

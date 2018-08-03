@@ -1,0 +1,18 @@
+#btn-search {
+    background-color: #18d3f9 !important;
+    border-color: #18d3f9 !important;
+}
+
+#btn-search:hover {
+    background-color: #17c9ed !important;
+    border-color: #17c9ed !important;
+}
+
+#temperature {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#description {
+    font-style: italic; 
+}
