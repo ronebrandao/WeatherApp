@@ -1,2 +1,2 @@
 # WeatherApp
-App to see weather information by city.
+App to see weather information.
